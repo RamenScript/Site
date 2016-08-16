@@ -1,0 +1,60 @@
+a {
+color: black;
+}
+#night {
+	padding-left: 20px;
+	color: black;
+	border-style: solid;
+	border-width: 5px;
+}
+#vid {
+	width: 400px;
+	border-radius:45px
+}
+#play {
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	top: 235px;
+	left: 30px;
+}
+progress::-webkit-progress-bar {
+	background: gray;
+	border-radius: 5px;
+}
+progress,
+progress[role][aria-valuenow] {
+   background: gray;
+}
+progress {
+	color: black;
+	border-radius: 5px;
+}
+progress::-moz-progress-bar { 
+	background: black;
+	border-radius: 5px;
+}
+progress[aria-valuenow]:before  {
+	background: black;
+	border-radius: 5px;
+}
+progress::-webkit-progress-value {
+	background: black;
+}
+#progress {
+	border-radius: 20px;
+	height: 20px;
+	width: 305px;
+	position: absolute;
+	top: 245px;
+	left: 80px;
+}
+#surround {
+	width: 400px;
+	height: 220px;
+	background-color: black;
+	border-width: 5px;
+	border-color: black;
+	border-style: solid;
+	border-radius: 50px
+}
