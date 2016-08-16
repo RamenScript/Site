@@ -1,6 +1,10 @@
 a {
 color: black;
 }
+p {
+float: left;
+width: 400px;
+}
 #night {
 	padding-left: 20px;
 	color: black;
@@ -15,7 +19,7 @@ color: black;
 	width: 35px;
 	height: 35px;
 	position: absolute;
-	top: 235px;
+	top: 245px;
 	left: 30px;
 }
 progress::-webkit-progress-bar {
@@ -46,7 +50,7 @@ progress::-webkit-progress-value {
 	height: 20px;
 	width: 305px;
 	position: absolute;
-	top: 245px;
+	top: 255px;
 	left: 80px;
 }
 #surround {
