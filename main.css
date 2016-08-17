@@ -1,13 +1,5 @@
-a {
-color: black;
-}
-p {
-float: left;
-width: 400px;
-}
 #night {
 	padding-left: 20px;
-	color: black;
 	border-style: solid;
 	border-width: 5px;
 }
@@ -58,7 +50,6 @@ progress::-webkit-progress-value {
 	height: 220px;
 	background-color: black;
 	border-width: 5px;
-	border-color: black;
 	border-style: solid;
 	border-radius: 50px
 }
