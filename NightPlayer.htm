@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script> $(document).ready(function() {
+	$("#header").load("https://ramenscript.github.io/Site/header.html")
+	})
+</script>
+<link href='https://ramenscript.github.io/Site/header.css' type='text/css' rel='stylesheet'>
 <title>Night Player my custom javascript video player</title>
 <meta charset="UTF-8">
 <link rel='stylesheet' type='text/css' href='https://ramenscript.github.io/Site/main.css'>
 </head>
-<h1 id='night'>Night Player</h1>
+<div id='header'></div>
+<h2 id='night'>Night Player</h1>
 <div id=surround>
 <video class='content' id='vid' src='http://www.w3schools.com/tags/mov_bbb.mp4' type='video/mp4'> </video>
 <img id='play' class='content' src='https://github.com/RamenScript/Site/blob/gh-pages/media_play.png?raw=true'>
