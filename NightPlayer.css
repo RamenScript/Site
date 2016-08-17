@@ -9,7 +9,7 @@
 	width: 35px;
 	height: 35px;
 	position: absolute;
-	top: 340px;
+	top: 360px;
 	left: 50px;
 }
 progress::-webkit-progress-bar {
@@ -40,13 +40,12 @@ progress::-webkit-progress-value {
 	height: 20px;
 	width: 305px;
 	position: absolute;
-	top: 350px;
+	top: 370px;
 	left: 100px;
 }
 #surround {
 	width: 400px;
 	height: 220px;
-	background-color: black;
 	border-width: 5px;
 	border-style: solid;
 	border-radius: 50px
