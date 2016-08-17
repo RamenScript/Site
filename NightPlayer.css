@@ -1,7 +1,5 @@
 #night {
 	padding-left: 20px;
-	border-style: solid;
-	border-width: 5px;
 }
 #vid {
 	width: 400px;
@@ -11,7 +9,7 @@
 	width: 35px;
 	height: 35px;
 	position: absolute;
-	top: 320px;
+	top: 340px;
 	left: 50px;
 }
 progress::-webkit-progress-bar {
@@ -42,7 +40,7 @@ progress::-webkit-progress-value {
 	height: 20px;
 	width: 305px;
 	position: absolute;
-	top: 330px;
+	top: 350px;
 	left: 100px;
 }
 #surround {
