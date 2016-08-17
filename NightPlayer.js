@@ -11,7 +11,9 @@ var progress =
  progress.value = 0;
  progress.min = 0;
 //making the function for the video and button toggle play didnt know how to get around not wanting progress included more simply.
-
+$(document).ready(function() {
+	$("#header").load("https://ramenscript.github.io/Site/header.html")
+	});
 	function toggle() {
 		if(video.paused) {
 			video.play();
