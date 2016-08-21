@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Playing with Canvas Ball</title>
+    <style>
+	html {background-color: black;}
+    	canvas { background: white; border: solid 10px gray; margin: 25px;}
+    </style>
+</head>
+<body>
+
+<canvas id='can' width="480" height="320"></canvas>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+var canvas = document.getElementById('can');
+var graphics = canvas.getContext('2d');
+var x = canvas.width/2;
+var y = canvas.height/2;
+function draw() {
+graphics.clearRect(0, 0, canvas.width, canvas.height)
+graphics.beginPath();
+graphics.arc(x, y, 10, 0, Math.PI*2);
+graphics.fillStyle = 'black';
+graphics.fill();
+graphics.closePath();
+}
+draw();
+$(document).bind('keydown', function(e) {
+switch(e.which) {
+
+	case 37: 
+	if(x>12) {x-=2};
+break;
+
+	case 38:
+	if(y>12) {y-=2};
+break;
+
+	case 39: 
+	if(x<canvas.width-12 || y>canvas.height-25) {x+=2};
+break;
+
+	case 40: 
+	if(y<canvas.height-15) {y+=2};
+break;
+}
+if(x>canvas.width-12) {
+x=canvas.width+12;
+draw();
+window.location = 'https://ramenscript.github.io/Site/index.html'}
+draw();
+});
+</script>
+<p>I may try making a game in the future with canvas this is just a ball in a box i made. There may or may not be an easter egg... </p>
+</body>
+</html>
