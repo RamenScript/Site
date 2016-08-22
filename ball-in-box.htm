@@ -2,7 +2,6 @@
 <head>
 <title>Playing with Canvas Ball</title>
     <style>
-	html {background-color: black;}
     	canvas { background: white; border: solid 10px gray; margin: 25px;}
     </style>
 <link rel='stylesheet' type='text/css' href='https://ramenscript.github.io/Site/header.css'>
@@ -13,6 +12,10 @@
 <canvas id='can' width="480" height="320"></canvas>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
+$(document).ready(function() {
+	$("#header").load("https://ramenscript.github.io/Site/header.html")
+	});
+	
 var canvas = document.getElementById('can');
 var graphics = canvas.getContext('2d');
 var x = canvas.width/2;
@@ -28,19 +31,15 @@ graphics.closePath();
 draw();
 $(document).bind('keydown', function(e) {
 switch(e.which) {
-
 	case 37: 
 	if(x>12) {x-=2};
 break;
-
 	case 38:
 	if(y>12) {y-=2};
 break;
-
 	case 39: 
 	if(x<canvas.width-12 || y>canvas.height-25) {x+=2};
 break;
-
 	case 40: 
 	if(y<canvas.height-15) {y+=2};
 break;
